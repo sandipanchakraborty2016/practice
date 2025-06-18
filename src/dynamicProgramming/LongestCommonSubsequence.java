@@ -23,7 +23,7 @@ public class LongestCommonSubsequence {
         if (s1.charAt(i) == s2.charAt(j)) {
             result = 1 + helper(s1, s2, i + 1, j + 1);
         } else {
-            result = Math.max(helper(s1, s2, i + 1, j), helper(s1, s2, i, j + 1);
+            result = Math.max(helper(s1, s2, i + 1, j), helper(s1, s2, i, j + 1));
         }
         memo.put(key, result);
         return result;
